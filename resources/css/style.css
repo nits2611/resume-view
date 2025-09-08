@@ -1,0 +1,114 @@
+/* Scrollbar style - Start */
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  /* Slim width */
+  height: 6px;
+  /* Slim height for horizontal scrollbars */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Light gray background */
+  border-radius: 8px;
+}
+
+/* Thumb (scroll handle) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Darker gray for the handle */
+  border-radius: 8px;
+}
+
+/* Thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Darker gray on hover */
+}
+/* Scrollbar style - End */
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.active-link {
+  color: #2563EB;
+  font-weight: 600;
+}
+
+.hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+section>div.max-w-4xl {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  section>div.max-w-4xl {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section>div.max-w-4xl {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  #modal-body {
+    font-size: 11px;
+  }
+}
+
+header.hero {
+  background: linear-gradient(to right, #001b66, #0f766e);
+  /* Indigo to Teal */
+  color: white;
+  /* text-shadow: 0 2px 4px rgba(0,0,0,0.6); */
+}
+
+#tools-skills,
+#soft-skills,
+#tech-skills,
+#modal-body {
+  padding: 0 5px 5px 0;
+}
+
+#modal-body {
+  height: 70vh;
+  overflow-y: auto;
+  text-align: center;
+}
+
+#modal-body h4 {
+  text-align: left;
+}
+
+#footer {
+  z-index: 10;
+}
+
+.disabled-link{
+  cursor: not-allowed;
+}
+
+.testi-profile{
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+#btn-read-more{
+  cursor: pointer;
+}

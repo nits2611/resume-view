@@ -1,0 +1,256 @@
+/* Scrollbar style - Start */
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  /* Slim width */
+  height: 6px;
+  /* Slim height for horizontal scrollbars */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Light gray background */
+  border-radius: 8px;
+}
+
+/* Thumb (scroll handle) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Darker gray for the handle */
+  border-radius: 8px;
+}
+
+/* Thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  /* Darker gray on hover */
+}
+/* Scrollbar style - End */
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.active-link {
+  color: #2563EB;
+  font-weight: 600;
+}
+
+.hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+section>div.max-w-4xl {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  section>div.max-w-4xl {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section>div.max-w-4xl {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  #modal-body {
+    font-size: 11px;
+  }
+}
+
+header.hero {
+  background: linear-gradient(to right, #001b66, #0f766e);
+  /* Indigo to Teal */
+  color: white;
+  /* text-shadow: 0 2px 4px rgba(0,0,0,0.6); */
+}
+
+#tools-skills,
+#soft-skills,
+#tech-skills,
+#modal-body {
+  padding: 0 5px 5px 0;
+}
+
+#modal-body {
+  height: 70vh;
+  overflow-y: auto;
+  text-align: center;
+}
+
+#modal-body h4 {
+  text-align: left;
+}
+
+#footer {
+  z-index: 10;
+}
+
+.disabled-link{
+  cursor: not-allowed;
+}
+
+.testi-profile{
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+#btn-read-more{
+  cursor: pointer;
+}
+
+#btn-resume-dl, #btn-install{
+  border: 2px solid white;
+}
+
+#btn-install{
+  background-color: transparent;
+  color: white;
+}
+
+.brand {
+  display:flex; align-items:center; gap:.5rem;
+  font-weight:700; letter-spacing:.2px;
+  text-decoration:none; color:#0f172a;
+}
+.header--dark .brand { color:#fff; }
+.brand-mark { width:36px; height:36px; border-radius:50%; } /* use your rounded icon */
+.brand-text { font-size:1.05rem; }
+
+/* Mobile: icon-only */
+@media (max-width:640px){
+  .brand-text { display:none; }
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+/* Share - Start */
+.share-title{ font-weight:800; margin-bottom:.5rem; }
+
+/* Center the block (replaces <center>) */
+.share-inner{ text-align:center; display:flex; flex-direction:column; align-items:center; }
+
+/* Dark theme base (works with your bg-black/text-white) */
+.share, .share *{ color-scheme: dark; }
+.btn{
+  padding:.55rem .8rem;
+  border:1px solid rgba(255,255,255,.18);   /* darker border for dark bg */
+  border-radius:.6rem;
+  font-weight:600;
+  color:#fff; background:rgba(255,255,255,.04);
+  transition:background .15s ease,border-color .15s ease,color .15s ease;
+}
+.btn:hover{ background:rgba(255,255,255,.10); border-color:#1D4ED8; }
+
+/* Native share button width */
+/* #btnShareNative{ width:100%; max-width:420px; margin:0 auto .6rem; } */
+
+/* Responsive grid */
+.share-grid{
+  display:grid; gap:.6rem; width:100%; max-width:720px; justify-items:center;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+}
+/* Button widths in grid */
+.share-grid .btn{ width:100%; max-width:260px; }
+
+/* Small screens */
+@media (max-width:480px){
+  .share-grid{ grid-template-columns:repeat(2,minmax(140px,1fr)); gap:.5rem; }
+}
+@media (max-width:360px){
+  .share-grid{ grid-template-columns:1fr; }
+}
+
+/* Optional brand hover accents */
+.share-native:hover{ background:#95c5f1; border-color:#95c5f1; color:#0f0c0c; }
+.s-linkedin:hover{ background:#0A66C2; border-color:#0A66C2; color:#fff; }
+.s-x:hover{ background:#fff; border-color:#fff; color:#000; }
+.s-facebook:hover{ background:#1877F2; border-color:#1877F2; color:#fff; }
+.s-whatsapp:hover{ background:#25D366; border-color:#25D366; color:#021; }
+.s-email:hover{ background:#d15166; border-color:#d15166; color:#021; }
+.s-sms:hover{ background:#f8ea26; border-color:#f8ea26; color:#021; }
+.s-copy:hover{ background:#f77c17; border-color:#f77c17; color:#021; }
+
+/* Accessibility */
+.btn:focus-visible{ outline:2px solid #1D4ED8; outline-offset:2px; border-color:transparent; }
+
+.ct-icon{ display:inline-block; vertical-align:middle; width:1.2em; height:1.2em; } /* share icon in-line */
+/* Share - End */
+
+/* scroll to top - Start */
+/* Scroll to top button */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Scroll to top button with floating 3D look */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Scroll to top button with smooth fade and 3D floating style */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 55px;
+  right: 15px;
+  z-index: 9999;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  outline: none;
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.7), rgba(40, 40, 40, 0.8));
+  color: white;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 22px;
+  opacity: 0;
+  border-radius:5px;
+  visibility: hidden;
+  pointer-events: none; /* prevents clicking when hidden */
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease,
+    transform 0.25s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+  
+  /* 3D floating shadows */
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    0 8px 16px rgba(0, 0, 0, 0.3),
+    inset 0 2px 2px rgba(255, 255, 255, 0.2);
+}
+
+/* When active (visible) */
+#scrollTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Hover: lift and add stronger shadow */
+#scrollTopBtn:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 6px 12px rgba(0, 0, 0, 0.45),
+    0 12px 24px rgba(0, 0, 0, 0.35),
+    inset 0 2px 2px rgba(255, 255, 255, 0.25);
+  background: linear-gradient(145deg, rgba(30, 30, 30, 0.9), rgba(0, 0, 0, 0.9));
+}
+/* scroll to top - End */

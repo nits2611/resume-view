@@ -1,0 +1,17 @@
+{
+  "id": "/resume-view/",
+  "name": "Nitesh Harjilawala — Portfolio & Resume",
+  "short_name": "Connect2Nitesh",
+  "start_url": "/resume-view/?source=pwa",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#0F172A",
+  "icons": [
+    { "src": "assets/icons/icon-192-nh.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512-nh.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "screenshots": [
+    { "src": "assets/images/ss/pwa-home-desk-1600x900.png", "sizes": "1600x900", "type": "image/png", "form_factor": "wide", "label": "Home - Desktop" },
+    { "src": "assets/images/ss/pwa-home-mobile-720x1280.png","sizes": "720x1280", "type": "image/png", "form_factor": "narrow", "label": "Home - Mobile" }
+  ]
+}

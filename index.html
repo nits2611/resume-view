@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- MS-Clarity - Start -->
+  <script type="text/javascript">
+    // init clarity
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "tkahfcmt6p");
+
+    // tag app mode once per session
+    const isStandalone =
+    window.matchMedia('(display-mode: standalone)').matches ||
+    window.matchMedia('(display-mode: fullscreen)').matches ||
+    window.navigator.standalone === true; // iOS
+    window.clarity && clarity('set', 'app_mode', isStandalone ? 'pwa' : 'web');
+  </script>
+  <!-- MS-Clarity - End -->
+  <!-- Open Graph tags (used by LinkedIn, Facebook, etc.) -->
+   <!-- Primary: wide banner -->
+  <meta property="og:image" content="https://nits2611.github.io/resume-view/assets/images/banners/preview-banner-1200x630.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Secondary: square fallback (WhatsApp-friendly) -->
+  <meta property="og:image" content="https://nits2611.github.io/resume-view/assets/images/banners/preview-banner-1200.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+
+  <!-- Common OG basics -->
+  <meta property="og:title" content="Nitesh Harjilawala | Full-Stack Web Developer | PHP • JS • MySQL • More">
+  <meta property="og:description" content="Passionate Software Developer with expertise in PHP, JS, and web apps. Blending technical depth with leadership experience.">
+  <meta property="og:url" content="https://nits2611.github.io/resume-view/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nitesh Harjilawala">
+
+  <!-- Twitter Card (used by Twitter/X) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nitesh Harjilawala | Web Developer | PHP • JS • MySQL • More">
+  <meta name="twitter:description" content="Passionate Software Developer with expertise in PHP, JS, and web apps. Blending technical depth with leadership experience.">
+  <meta name="twitter:image" content="https://nits2611.github.io/resume-view/assets/images/banners/preview-banner-1200x630.png">
+  <meta name="twitter:image:alt" content="Nitesh Harjilawala Portfolio">
+
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Nitesh Harjilawala - Full-Stack Web Developer</title>
+  <!-- Basic SEO -->
+  <meta name="description" content="Resume & portfolio of Nitesh Harjilawala, Full-Stack PHP developer (Web Developer) specializing in PHP, JavaScript, React, and MySQL. View projects, experience, and contact.">
+  <link rel="canonical" href="https://nits2611.github.io/resume-view/">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Nitesh Harjilawala">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  <script src="./resources/js/core.js?1.0.0.1" type="text/javascript"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person",
+  "name":"Nitesh Harjilawala","jobTitle":"Web Developer",
+  "url":"https://nits2611.github.io/resume-view/",
+  "sameAs":["https://www.linkedin.com/in/nitesh-harjilawala/","https://github.com/nits2611"]}
+  </script>
+  <script>
+    const V='1.0.0.3'; //version
+    loadResources();
+    function loadResources()
+    {
+      makeElem('link', document.head, attributes = {rel : 'stylesheet', href : ('resources/css/style.css?v=' + V)}); // load css
+      makeElem('script', document.head, attributes = {type : 'text/javascript', src : ('resources/js/csw.js?v=' + V)}); // load csw
+    }
+  </script>
+  <style>
+    #iframe-wrapper, #iframe-wrapper iframe {
+      width: 100% !important;              /* or set a fixed width if needed */
+      height: 100% !important;           /* limit visible height */
+      overflow: hidden;         /* hide anything beyond this height */
+    }
+    /* preloader - Start */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    #preloader.fade-out {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      pointer-events: none;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border: 4px solid #ccc;
+      border-top: 4px solid #333;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    /* preloader - End */
+  </style>
+</head>
+
+<body class="bg-white text-gray-800">
+  <!-- Navbar - Start -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-3">
+        <div class="text-lg font-bold">
+          <!-- <a href="#hero">Nitesh H.</a> -->
+          <a class="brand" href="#hero" aria-label="Home — Nitesh Harjilawala">
+          <img class="brand-mark" src="assets/icons/icon-192-nh.png" width="36" height="36" alt="Nitesh Logo" aria-hidden="true">
+          <span class="brand-text">Nitesh <span class="brand-initial">H.</span></span>
+        </a>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a class="nav-link hover:text-blue-600" href="#about">About</a>
+          <a class="nav-link hover:text-blue-600" href="#skills">Skills</a>
+          <a class="nav-link hover:text-blue-600" href="#experience">Experience</a>
+          <a class="nav-link hover:text-blue-600" href="#achievement">Achievements</a>
+          <a class="nav-link hover:text-blue-600" href="#academic">Academic</a>
+          <a class="nav-link hover:text-blue-600" href="#testimonials">Testimonials</a>
+          <a class="nav-link hover:text-blue-600" href="#contact">Contact</a>
+        </div>
+        <div class="md:hidden">
+          <button class="text-gray-800 focus:outline-none" id="menu-toggle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="hidden md:hidden pb-4" id="mobile-menu">
+        <a class="block py-1 hover:text-blue-600" href="#about">About</a>
+        <a class="block py-1 hover:text-blue-600" href="#skills">Skills</a>
+        <a class="block py-1 hover:text-blue-600" href="#experience">Experience</a>
+        <a class="block py-1 hover:text-blue-600" href="#achievement">Achievements</a>
+        <a class="block py-1 hover:text-blue-600" href="#academic">Academic</a>
+        <a class="block py-1 hover:text-blue-600" href="#testimonials">Testimonials</a>
+        <a class="block py-1 hover:text-blue-600" href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar - End -->
+
+  <!-- Hero Banner - Start -->
+  <header class="hero relative pt-20 text-center text-white pb-12" id="hero">
+    <div class="relative z-10">
+      <div class="flex justify-center">
+        <img src="assets/images/hero/Nit.png" alt="Nitesh Harjilawala Photo" class="rounded-full border-4 border-[#02023a] w-40 h-40 object-cover shadow-lg">
+      </div>
+
+      <h1 class="text-4xl font-bold mt-4">Nitesh Harjilawala</h1>
+      <p class="text-lg mt-2">Web Developer | Tech Enthusiast | Leadership Graduate</p>
+      <div>
+        <a class="inline-block mt-4 px-4 py-1 bg-white text-blue-600 font-semibold rounded shadow hover:bg-gray-100 transition cursor-pointer" target="_blank" href="assets/documents/Nitesh-Harjilawala_Full-Stack-Developer_Canada.pdf" title="Download Resume (PDF)" id="btn-resume-dl">
+          <span class="inline-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="#1D4ED8" viewBox="0 0 24 18">
+              <path d="M12 16c.3 0 .6-.1.8-.3l5-5c.4-.4.4-1 0-1.4s-1-.4-1.4 0L13 12.6V4c0-.6-.4-1-1-1s-1 .4-1 1v8.6L7.6 9.3c-.4-.4-1-.4-1.4 0s-.4 1 0 1.4l5 5c.2.2.5.3.8.3zM5 20c0 .6.4 1 1 1h12c.6 0 1-.4 1-1s-.4-1-1-1H6c-.6 0-1 .4-1 1z"/>
+            </svg>
+            Download Resume (PDF)
+          </span>
+        </a>
+        <button class="inline-block mt-4 px-4 py-1 bg-white text-blue-600 font-semibold rounded shadow hover:bg-gray-100 transition cursor-pointer" title="No permissions required. Works offline." id="btn-install" hidden>
+          <span class="inline-flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="2 0 22 22" aria-hidden="true" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="2" width="12" height="20" rx="3"/> <!-- phone -->
+              <line x1="10" y1="5" x2="14" y2="5"/> <!-- speaker slot -->
+              <line x1="9" y1="19" x2="15" y2="19"/> <!-- home indicator -->
+              <!-- install arrow inside -->
+              <path d="M12 8v6"/>
+              <path d="M9.5 12l2.5 2.5L14.5 12"/>
+            </svg>
+            <span id="lbl-btn-install">Install for Quick Connect</span>
+          </span>
+        </button>
+      </div>
+      <!-- <br>
+      <a class="text-xs mt-2 text-blue-100 transition cursor-pointer" onclick="loadGForm();" title="Request a Tailored Resume for Specific Role">Request a Tailored Resume</a> -->
+    </div>
+
+    <!-- Background Wave SVG -->
+    <svg viewBox="0 0 1440 220" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 w-full z-0">
+      <path fill="#00b4d8"
+        d="M0,160L48,170.7C96,181,192,203,288,192C384,181,480,139,576,122.7C672,107,768,117,864,144C960,171,1056,213,1152,213.3C1248,213,1344,171,1392,149.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" />
+    </svg>
+  </header>
+  <!-- Hero Banner - End -->
+
+  <!-- About Me - Start -->
+  <section class="p-8 max-w-4xl mx-auto" data-aos="fade-up" id="about">
+    <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+    <p>
+      I have always been fascinated by how technology solves real-world problems quickly, precisely, and tirelessly. That curiosity led me to pursue a <b>Bachelor of Computer Applications (BCA)</b> and later a <b>Master’s in Computer Applications (MCA)</b>, where I fell in love with programming and the creative problem-solving behind every line of code.
+      <br><br>
+      Since 2018, I have been immersed in the world of web development - contributing to fast-paced <b>SaaS environments</b> and tech teams in India. With <b>5+ years of hands-on experience</b>, my journey spans backend and frontend development using <b>PHP, JavaScript, jQuery, Ajax, MySQL,</b> and frameworks like <b>CodeIgniter</b> and <b>ReactJS</b>. I have built <b>scalable systems, integrated APIs,</b> managed <b>version control,</b> and supported <b>cross-functional teams</b> from idea to deployment. But my path didn’t stop at code.
+      <span id="summary-more" class="hidden">
+      <br><br>
+      Driven by the belief that strong teams build strong systems, I moved to <b>Canada</b> and pursued a <b>Master’s in Leadership (MA Lead)</b>. This experience sharpened my skills in <b>communication, team dynamics,</b> and ethical decision-making - allowing me to bring not only technical solutions but also collaborative energy into every project.
+      <br><br>
+      Today, I am looking to contribute to teams where <b>clean code, shared learning,</b> and <b>meaningful impact</b> go hand-in-hand - not just for project success, but for the growth of people, teams, and the organization as a whole. I love <b>solving complex problems, learning from peers,</b> and building software that actually makes a difference.
+      <br>
+      If you are someone who values strong fundamentals, teamwork, and shared growth - let's <a class="text-blue-600" href="#contact"><b>connect</b></a>.<br>
+      </span>
+      <a onclick="toggleSection('summary-more', 'btn-read-more', 'read')" id="btn-read-more" class="text-blue-600">Read More...</a>
+    </p>
+  </section>
+  <!-- About Me - End -->
+
+  <!-- Skills - Start -->
+  <section id="skills" class="bg-gray-50 p-8" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-6">Skills</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-center">
+        <div class="text-center bg-gray-100 py-2 px-4 rounded shadow">PHP</div>
+        <div class="text-center bg-gray-100 py-2 px-4 rounded shadow">React</div>
+        <div class="text-center bg-gray-100 py-2 px-4 rounded shadow">Angular</div>
+        <div class="text-center bg-gray-100 py-2 px-4 rounded shadow">MySQL</div>
+        <div class="text-center bg-gray-100 py-2 px-4 rounded shadow">JavaScript</div>
+        <div class="text-center bg-gray-100 py-2 px-4 rounded shadow">HTML</div>
+        <div class="text-center bg-gray-100 py-2 px-4 rounded shadow">CSS</div>
+        <button onclick="document.getElementById('skillModal').classList.remove('hidden')" class="text-center px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition" id="btn-see-all">See All</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Modal - Start -->
+  <div id="skillModal"
+    class="fixed inset-0 z-50 bg-black bg-opacity-60 flex items-center justify-center hidden overflow-y-auto">
+    <div class="bg-white max-w-5xl w-full mx-4 my-8 p-6 rounded-lg shadow-lg relative overflow-y-auto max-h-[80vh]">
+      <button onclick="document.getElementById('skillModal').classList.add('hidden')"
+        class="absolute top-3 right-4 text-gray-600 text-2xl font-bold z-10">&times;</button>
+      <h3 class="text-xl font-semibold mb-6 text-center mt-4">All Skills
+        <hr>
+      </h3>
+      <div id="modal-body">
+        <!-- Technical Skills -->
+        <div class="mb-6 mr-2">
+          <div class="flex justify-between items-center cursor-pointer"
+            onclick="toggleSection('tech-skills', 'tech-skills-click')">
+            <h3 class="text-lg font-semibold mb-2">Technical Skills</h3>
+            <span class="text-2xl" id="tech-skills-click">−</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4" id="tech-skills">
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">PHP</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">React</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Angular</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">MySQL</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">JavaScript</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">HTML</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">CSS</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">jQuery</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Ajax</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">OOP</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">JSON</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">XML</div>
+          </div>
+        </div>
+        <hr><br>
+        <!-- Tools & Frameworks -->
+        <div class="mb-6 mr-2">
+          <div class="flex justify-between items-center cursor-pointer"
+            onclick="toggleSection('tools-frmwrk', 'tools-frmwrk-click')">
+            <h3 class="text-lg font-semibold mb-2">Tools & Frameworks</h3>
+            <span class="text-2xl" id="tools-frmwrk-click">−</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4" id="tools-frmwrk">
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">CodeIgniter</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Laravel</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">MVC</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">API Integration</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Git & GitHub</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">AWS</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">MongoDB</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Bootstrap</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Tailwind</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">VS Code</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Komodo</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Postman</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">MySQL Workbench</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">PRADO</div>
+          </div>
+        </div>
+        <hr><br>
+        <!-- Soft Skills -->
+        <div class="mr-2">
+          <div class="flex justify-between items-center cursor-pointer"
+            onclick="toggleSection('soft-skills', 'soft-skills-click')">
+            <h3 class="text-lg font-semibold mb-2">Soft Skills</h3>
+            <span class="text-2xl" id="soft-skills-click">−</span>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4" id="soft-skills">
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Leadership</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Teamwork</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Adaptability</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Problem Solving</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Time Management</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Communication</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Critical Thinking</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Continuous Learning</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Collaboration</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Customer-Centricity</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Ownership</div>
+            <div class="bg-gray-100 py-2 px-4 rounded shadow">Interpersonal Skills</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Skills Modal - End -->
+  <!-- Skills - End -->
+
+  <!-- Work Experience - Start -->
+  <section class="p-8 max-w-4xl mx-auto" data-aos="fade-up" id="experience">
+    <h2 class="text-2xl font-semibold mb-8">Work Experience</h2>
+    <div class="relative border-l-2 border-blue-500 pl-6 ml-2">
+      <!-- Job 1 -->
+      <div class="mb-10 relative">
+        <div class="absolute -left-4 top-2 w-4 h-4 bg-blue-500 rounded-full border-2 border-white"></div>
+        <div class="ml-2">
+          <div class="flex justify-between items-center cursor-pointer" onclick="toggleSection('job1-details', 'icon-job1')">
+            <h3 class="text-xl font-semibold">Senior Software Developer</h3>
+            <span class="text-2xl" id="icon-job1">−</span>
+          </div>
+          <p class="text-sm text-gray-600"><a href="https://www.staah.com/" target="_blank" title="Staah Hotel Software Pvt. Ltd.">Staah Hotel Software Pvt. Ltd. (Owned by Access Group)</a> | Mar 2022 – Oct 2023</p>
+          <ul class="list-disc list-inside text-gray-700 transition-all duration-300 ease-in-out overflow-hidden" id="job1-details">
+            <li>Led product training sessions and provided technical mentoring to junior developers.</li>
+            <li>Oversaw application development, testing coordination, and cross-team communication.</li>
+            <li>Designed and developed reusable front-end widgets and RESTful APIs for integration.</li>
+            <li>Optimized server performance by improving backend logic and MySQL queries.</li>
+            <li>Proposed enhancements in technology, processes, and system performance.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Job 2 -->
+      <div class="mb-10 relative">
+        <div class="absolute -left-4 top-2 w-4 h-4 bg-blue-500 rounded-full border-2 border-white"></div>
+        <div class="ml-2">
+          <div class="flex justify-between items-center cursor-pointer" onclick="toggleSection('job2-details', 'icon-job2')">
+            <h3 class="text-xl font-semibold">PHP Developer</h3>
+            <span class="text-2xl" id="icon-job2">−</span>
+          </div>
+          <p class="text-sm text-gray-600"><a href="https://upqor.com/" target="_blank" title="UPQOR Pvt. Ltd.">UPQOR Pvt. Ltd. (Previously PK Infosys)</a> | Feb 2021 – Dec 2021</p>
+          <ul class="list-disc list-inside text-gray-700 transition-all duration-300 ease-in-out overflow-hidden" id="job2-details">
+            <li>Handled backend development for sub-projects “Jewelry” and “Diamond Hub”.</li>
+            <li>Collaborated with designers, QA, and project managers for smooth delivery.</li>
+            <li>Built and maintained APIs, and contributed to frontend development using Angular.</li>
+            <li>Managed full development lifecycle from specification to implementation and testing.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Job 3 -->
+      <div class="mb-10 relative">
+        <div class="absolute -left-4 top-2 w-4 h-4 bg-blue-500 rounded-full border-2 border-white"></div>
+        <div class="ml-2">
+          <div class="flex justify-between items-center cursor-pointer" onclick="toggleSection('job3-details', 'icon-job3')">
+            <h3 class="text-xl font-semibold">Associate Software Engineer</h3>
+            <span class="text-2xl" id="icon-job3">−</span>
+          </div>
+          <p class="text-sm text-gray-600"><a href="https://www.yanoljacloudsolution.com/" target="_blank" title="Yanolja Cloud Solutions">Yanolja Cloud Solutions (Formerly eZee Technosys Pvt. Ltd.)</a> | May 2018 – Feb 2021</p>
+          <ul class="list-disc list-inside text-gray-700 transition-all duration-300 ease-in-out overflow-hidden" id="job3-details">
+            <li>Worked on PMS modules in the hospitality industry using full SDLC practices.</li>
+            <li>Conducted code reviews, integrated APIs, and improved backend systems.</li>
+            <li>Led backend security checks and ensured PCI-DSS and GDPR compliance.</li>
+            <li>Collaborated across teams and acted as Release Manager for deployments.</li>
+            <li>Received internal recognition for winning a hackathon and implementing performance-boosting features.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Work Experience - End -->
+
+  <!-- Achievements - Start -->
+  <section class="bg-gray-50 p-8" data-aos="fade-up" id="achievement">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-6">Notable Achievements</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Achievement-1 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
+          <div class="flex items-center mb-4">
+            <span class="text-3xl mr-3">🌟</span>
+            <div>
+              <h3 class="text-lg font-semibold">Outstanding Project Delivery</h3>
+              <p class="text-sm text-gray-500">Recognition • Staah Hotel Software Pvt. Ltd.</p>
+            </div>
+          </div>
+          <p class="text-gray-700">
+            Successfully delivered a high-priority project within tight deadlines, recognized for exceptional performance and technical execution.
+          </p>
+        </div>
+        <!-- Achievement-2 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
+          <div class="flex items-center mb-4">
+            <span class="text-3xl mr-3">🏆</span>
+            <div>
+              <h3 class="text-lg font-semibold">Innovation & Contribution Awards</h3>
+              <p class="text-sm text-gray-500">Award • eZee Technosys Pvt. Ltd.</p>
+            </div>
+          </div>
+          <p class="text-gray-700">
+            Honored with ‘My eZee Reward’ and ‘Innovation Reward’ for impactful system enhancements and proposing valuable ideas that improved core product development.
+          </p>
+        </div>
+        <!-- Leadership-1 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-md transition mb-4">
+          <div class="flex items-center mb-3">
+            <span class="text-3xl mr-3">🌐</span>
+            <div>
+              <h3 class="text-lg font-semibold">Global Leadership Conference</h3>
+              <p class="text-sm text-gray-500">Leadership • Participant</p>
+            </div>
+          </div>
+          <p class="text-gray-700">
+            Attended the International Conference on Leadership & Governance, exploring topics around sustainable growth and responsible leadership.
+          </p>
+        </div>
+
+        <!-- Leadership-2 -->
+        <div class="bg-white p-6 rounded shadow hover:shadow-md transition mb-4">
+          <div class="flex items-center mb-3">
+            <span class="text-3xl mr-3">🤝</span>
+            <div>
+              <h3 class="text-lg font-semibold">International Leadership Association</h3>
+              <p class="text-sm text-gray-500">Leadership • Volunteer & Attendee</p>
+            </div>
+          </div>
+          <p class="text-gray-700">
+            Contributed to the 25th Global Conference on Cultivating Leadership for a Thriving Future hosted by ILA.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Achievements - End -->
+
+  <!-- Academic - Start -->
+  <section class="bg-white p-8" data-aos="fade-up" id="academic">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-6">Academic</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Degree 1 -->
+        <div class="bg-gray-50 p-6 rounded shadow hover:shadow-md transition">
+          <div class="flex items-center mb-4">
+            <span class="text-3xl mr-3">🎓</span>
+            <div>
+              <h3 class="text-lg font-semibold">Master of Arts in Leadership</h3>
+              <p class="text-sm text-gray-500 flex flex-wrap items-center gap-x-1 gap-y-1">
+                <span>Canada</span>
+                <img src="assets/icons/svg/canada-flag.svg" alt="Canada Flag" class="h-4 w-auto" />
+                <span>• Completed • 2025</span>
+              </p>
+            </div>
+          </div>
+          <p class="text-gray-700">Focused on strategic leadership, organizational development, and ethical
+            decision-making in multicultural environments.</p>
+        </div>
+        <!-- Degree 2 -->
+        <div class="bg-gray-50 p-6 rounded shadow hover:shadow-md transition">
+          <div class="flex items-center mb-4">
+            <span class="text-3xl mr-3">🎓</span>
+            <div>
+              <h3 class="text-lg font-semibold">Master of Computer Applications (MCA)</h3>
+              <p class="text-sm text-gray-500 flex flex-wrap items-center gap-x-1 gap-y-1">
+                <span>India</span>
+                <img src="assets/icons/svg/india-flag.svg" alt="India Flag" class="h-4 w-auto" />
+                <span>• Completed • 2018</span>
+              </p>
+            </div>
+          </div>
+          <p class="text-gray-700">Specialized in web development, software engineering, and data-driven application
+            architecture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Academic - End -->
+
+  <!-- Testimonial Section - Start -->
+  <section id="testimonials" class="bg-gray-50 py-12 px-6 scroll-mt-24">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold mb-10">Testimonials</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial-1 - Start -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between">
+          <div>
+            <div class="mb-4 text-left">
+              <span class="flex">
+                <img src="assets/images/testimonials/karan.jpeg" class="mr-2 testi-profile" />
+                <span>
+                  <p class="font-semibold">Karan Rochani</p>
+                  <p class="text-sm text-gray-500">Customer Success Manager in SaaS, Yanolja Cloud Solutions. (Formerly eZee Technosys Pvt. Ltd.)</p>
+                </span>
+              </span>
+            </div>
+            <p class="text-gray-600 italic">
+              "Despite being in different teams, Nitesh was always ready to lend a hand whenever we faced any technical issues that required his expertise. His quick response and collaborative nature helped our teams serve clients more efficiently. He's always learning and improving, staying current with technology to deliver top-quality work."
+            </p>
+          </div>
+          <div class="flex justify-end items-center mt-4 text-sm text-gray-500">
+            <span class="mr-1">Shared via LinkedIn</span>
+            <span class="text-2xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="inline-block mr-2">
+                <rect width="24" height="24" rx="4" fill="#0A66C2"></rect>
+                <path fill="#fff" d="M6.94 6.5C6.94 7.33 6.27 8 5.44 8S3.94 7.33 3.94 6.5 4.61 5 5.44 5s1.5.67 1.5 1.5zM4 9h2.89v9H4V9zm5.27 0h2.77v1.23h.04c.39-.74 1.32-1.52 2.72-1.52 2.91 0 3.45 1.92 3.45 4.42V18h-2.89v-4.1c0-.98-.02-2.23-1.36-2.23-1.36 0-1.57 1.06-1.57 2.15V18H9.27V9z" />
+              </svg>
+            </span> 
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between">
+          <div>
+            <div class="mb-4 text-left">
+              <span class="flex">
+                <img src="assets/images/testimonials/hitesh.jpeg" class="mr-2 testi-profile" />
+                <span>
+                  <p class="font-semibold">Hitesh Patel</p>
+                  <p class="text-sm text-gray-500">Head of Web Support, Staah Hotel Software Pvt. Ltd.</p>
+                </span>
+              </span>
+            </div>
+            <p class="text-gray-600 italic">
+              "I am delighted to recommend Nitesh. Having worked closely with him for over a year, I can confidently say he combines expertise, dedication, and a genuinely great personality. A pleasure to collaborate with."
+            </p>
+          </div>
+          <div class="flex justify-end items-center mt-4 text-sm text-gray-500">
+            <span class="mr-1">Shared via LinkedIn</span>
+            <span class="text-2xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="inline-block mr-2">
+                <rect width="24" height="24" rx="4" fill="#0A66C2"></rect>
+                <path fill="#fff" d="M6.94 6.5C6.94 7.33 6.27 8 5.44 8S3.94 7.33 3.94 6.5 4.61 5 5.44 5s1.5.67 1.5 1.5zM4 9h2.89v9H4V9zm5.27 0h2.77v1.23h.04c.39-.74 1.32-1.52 2.72-1.52 2.91 0 3.45 1.92 3.45 4.42V18h-2.89v-4.1c0-.98-.02-2.23-1.36-2.23-1.36 0-1.57 1.06-1.57 2.15V18H9.27V9z" />
+              </svg>
+            </span> 
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col justify-between">
+          <div>
+            <div class="mb-4 text-left">
+              <span class="flex">
+                <img src="assets/images/testimonials/kani.jpeg" class="mr-2 testi-profile" />
+                <span>
+                  <p class="font-semibold">Kanishka Gunawardana</p>
+                  <p class="text-sm text-gray-500">Human Resources Consultant, Telus Digital.</p>
+                </span>
+              </span>
+            </div>
+            <p class="text-gray-600 italic">
+              "I had the pleasure of working alongside Nitesh during our Master’s in Leadership. His calm presence, positive mindset, and thoughtful perspective brought great depth to every group project. Energetic, kind, and guided by strong ethics, he’s a genuine team player who always listens, learns, and lifts others. A remarkable collaborator and an even better human."
+            </p>
+          </div>
+          <div class="flex justify-end items-center mt-4 text-sm text-gray-500">
+            <span class="mr-1">Shared via Direct Feedback</span>
+            <span class="text-2xl">💬</span> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonial Section - End -->
+
+  <!-- Contact - Start -->
+  <section id="contact" class="bg-gray-800 text-white p-8" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-8 text-center">Contact</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+        <!-- LinkedIn - Start -->
+        <div class="text-center min-h-[320px] flex flex-col justify-between mb-8" id="linkedin-contact">
+          <div>
+            <p class="text-lg font-semibold mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                class="inline-block mr-2">
+                <rect width="24" height="24" rx="4" fill="#0A66C2"></rect>
+                <path fill="#fff" d="M6.94 6.5C6.94 7.33 6.27 8 5.44 8S3.94 7.33 3.94 6.5 4.61 5 5.44 5s1.5.67 1.5 1.5zM4 9h2.89v9H4V9zm5.27 0h2.77v1.23h.04c.39-.74 1.32-1.52 2.72-1.52 2.91 0 3.45 1.92 3.45 4.42V18h-2.89v-4.1c0-.98-.02-2.23-1.36-2.23-1.36 0-1.57 1.06-1.57 2.15V18H9.27V9z" />
+              </svg>
+              LinkedIn
+            </p>
+            <a href="https://www.linkedin.com/in/nitesh-harjilawala/" target="_blank" class="text-blue-400 underline break-words">Click Here</a>
+          </div>
+          <a href="https://www.linkedin.com/in/nitesh-harjilawala/" target="_blank" title="Contact via LinkedIn">
+            <img src="assets/icons/svg/linkedin.svg" alt="LinkedIn QR Code" class="mx-auto w-32 h-32 mt-4 shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg" />
+          </a>
+        </div>
+        <!-- LinkedIn - End -->
+
+        <!-- Email - Start -->
+        <div class="text-center min-h-[320px] flex flex-col justify-between mb-8" id="email-contact">
+          <div>
+            <p class="text-lg font-semibold mb-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" class="inline-block mr-2">
+                <rect width="24" height="24" rx="4" fill="#EA4335"></rect>
+                <path fill="#fff" d="M12 13.065L2 6h20l-10 7.065zm0 2.187L2 8.01V18h20V8.01l-10 7.242z" />
+              </svg>
+              Email
+            </p>
+            <a href="mailto:niteshharjilawala@gmail.com" target="_blank" class="text-blue-400 underline break-words">Click Here</a>
+          </div>
+          <a href="mailto:niteshharjilawala@gmail.com" target="_blank" title="Contact via Email">
+            <img src="assets/icons/svg/email.svg" alt="Email QR Code" class="mx-auto w-32 h-32 mt-4 shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out rounded-lg" />
+          </a>
+        </div>
+        <!-- Email - End -->
+
+        <!-- GitHub - Start -->
+        <div class="text-center min-h-[320px] flex flex-col justify-between mb-8" id="install-contact">
+          <div>
+            <p class="text-lg font-semibold mb-2 flex items-center justify-center cursor-pointer">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                class="inline-block mr-2">
+                <rect width="24" height="24" rx="4" fill="#333" />
+                <path fill="#fff"
+                  d="M12 .297C5.373.297 0 5.67 0 12.297c0 5.289 3.438 9.787 8.207 11.387.6.113.793-.261.793-.577v-2.173c-3.338.726-4.033-1.416-4.033-1.416-.547-1.391-1.334-1.761-1.334-1.761-1.091-.746.082-.73.082-.73 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.332-5.466-5.931 0-1.309.468-2.381 1.236-3.221-.123-.305-.536-1.528.117-3.182 0 0 1.008-.322 3.301 1.23a11.521 11.521 0 0 1 3.003-.403c1.02.005 2.047.138 3.003.403 2.291-1.552 3.297-1.23 3.297-1.23.655 1.654.242 2.877.119 3.182.77.84 1.233 1.912 1.233 3.221 0 4.609-2.805 5.624-5.479 5.921.429.37.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 22.08 24 17.582 24 12.297 24 5.67 18.627.297 12 .297z" />
+              </svg>
+              GitHub -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block mr-1">
+                <rect x="6" y="2" width="12" height="20" rx="3"></rect> <!-- phone -->
+                <line x1="10" y1="5" x2="14" y2="5"></line> <!-- speaker slot -->
+                <line x1="9" y1="19" x2="15" y2="19"></line> <!-- home indicator -->
+                <!-- install arrow inside -->
+                <path d="M12 8v6"></path>
+                <path d="M9.5 12l2.5 2.5L14.5 12"></path>
+              </svg>
+              Install Now
+            </p>
+            <a target="_blank" class="text-blue-400 underline break-words cursor-pointer" onclick="installClicked();">Click Here</a>
+          </div>
+          <a class="cursor-pointer transition mx-auto w-32 h-32 mt-4 rounded shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out" onclick="installClicked();" alt="Install Button" title="Click here to install">
+            <!-- <img src="assets/images/contact/Image-Coming-Soon-Placeholder-300x300.png" alt="GitHub QR Code" class="mx-auto w-32 h-32 mt-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out" /> -->
+            <span class="mx-auto w-32 h-32 mt-4 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
+              <!-- Install / phone icon (responsive) -->
+              <svg class="icon-install" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMidYMid meet">
+                <g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="2" width="16" height="20" rx="3" class="ns"></rect>        <!-- phone -->
+                  <line x1="10" y1="5"  x2="14" y2="5"  class="ns"/>                   <!-- speaker slot -->
+                  <line x1="9"  y1="19" x2="15" y2="19" class="ns"/>                   <!-- home bar -->
+                  <path d="M12 8v6" class="ns"/>                                        <!-- install arrow -->
+                  <path d="M9.5 12l2.5 2.5L14.5 12" class="ns"/>
+                </g>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <!-- GitHub - End -->
+
+        <!-- Contact Form - Start -->
+        <div class="text-center min-h-[320px] flex flex-col justify-between mb-8" id="form-contact">
+          <div>
+            <p class="text-lg font-semibold mb-2 flex items-center justify-center">
+              <!-- Inquiry Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="28" height="28" class="mr-2">
+                <rect x="10" y="4" width="40" height="56" rx="4" fill="#fbbf24" />
+                <rect x="14" y="8" width="40" height="56" rx="4" fill="#cfe9ff" />
+                <text x="20" y="24" font-size="6" fill="#4b5563" font-family="sans-serif">FORM</text>
+                <line x1="20" y1="30" x2="48" y2="30" stroke="#6b7280" stroke-width="2" />
+                <line x1="20" y1="36" x2="48" y2="36" stroke="#6b7280" stroke-width="2" />
+                <line x1="20" y1="42" x2="48" y2="42" stroke="#6b7280" stroke-width="2" />
+                <line x1="20" y1="48" x2="48" y2="48" stroke="#6b7280" stroke-width="2" />
+                <line x1="20" y1="54" x2="36" y2="54" stroke="#6b7280" stroke-width="2" />
+                <circle cx="48" cy="58" r="6" fill="#f43f5e" />
+              </svg>
+              For Contact
+            </p>
+            <a onclick="loadGForm();" class="text-blue-400 underline break-words cursor-pointer">Click Here</a>
+          </div>
+
+          <!-- Button with Inquiry Icon -->
+          <button onclick="loadGForm();"
+            class="transition mx-auto w-32 h-32 mt-4 rounded shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
+            <img src="assets/images/contact/contact_form.png" alt="Contact Me QR Code" title="Contact Me via Google Form" class="rounded-lg shadow-lg mx-auto" />
+          </button>
+        </div>
+        <!-- Contact Form - End -->
+      </div>
+    </div>
+  </section>
+  <!-- Contact - End -->
+
+  <!-- Share - Start -->
+  <section class="share pb-20 bg-black py-4 px-6 scroll-mt-24 text-white">
+    <div class="share-inner">
+      <h3 class="share-title">Share
+        <svg class="ct-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="18" cy="5" r="3"/>
+          <circle cx="6"  cy="12" r="3"/>
+          <circle cx="18" cy="19" r="3"/>
+          <path d="M8.7 10.9 15.3 6.1M8.7 13.1 15.3 17.9"/>
+        </svg>
+      </h3>
+
+      <!-- Fallback buttons -->
+      <div class="share-grid mx-auto" id="shareButtons">
+        <button id="btnShareNative" class="btn share-native" hidden>
+          Send
+          <svg class="ct-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <!-- box -->
+            <path d="M5 12v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/>
+            <!-- arrow up -->
+            <path d="M12 16V4"/>
+            <path d="M8.5 7.5 12 4l3.5 3.5"/>
+          </svg>
+        </button> <!-- One-tap native share (mobile) -->
+        <a class="btn s-whatsapp" id="shWA"  target="_blank" rel="noopener">
+          WhatsApp
+          <svg class="ct-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <!-- Solid WhatsApp glyph that inherits currentColor -->
+            <path fill="currentColor" d="M20.52 3.48A11.94 11.94 0 0 0 12.01 0C5.38 0 .01 5.37.01 12c0 2.1.55 4.14 1.6 5.94L0 24l6.23-1.6A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.2-3.48-8.52ZM12 21.6a9.6 9.6 0 0 1-4.9-1.35l-.35-.2-3.68.95.98-3.58-.23-.37A9.58 9.58 0 1 1 21.6 12 9.62 9.62 0 0 1 12 21.6Zm5.33-6.82c-.29-.14-1.74-.86-2.01-.96-.27-.1-.47-.14-.68.14-.2.29-.78.96-.95 1.16-.18.2-.35.22-.64.08-.29-.14-1.21-.44-2.31-1.41-.85-.76-1.42-1.7-1.59-1.98-.17-.29-.02-.45.13-.59.14-.14.29-.35.43-.52.14-.17.2-.29.29-.48.1-.2.05-.37-.02-.52-.07-.14-.68-1.63-.93-2.23-.25-.6-.5-.5-.68-.5h-.58c-.2 0-.52.07-.79.37-.27.29-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.06.15.2 2.1 3.21 5.09 4.5.71.31 1.26.5 1.69.64.71.23 1.35.2 1.86.12.57-.09 1.74-.71 1.99-1.39.25-.68.25-1.27.17-1.39-.07-.11-.25-.18-.54-.32Z"/>
+          </svg>
+        </a>
+        <a class="btn s-linkedin" id="shLI"  target="_blank" rel="noopener">
+          LinkedIn
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="ct-icon">
+            <rect width="24" height="24" rx="4" fill="currentColor"></rect>
+            <path fill="#000" d="M6.94 6.5C6.94 7.33 6.27 8 5.44 8S3.94 7.33 3.94 6.5 4.61 5 5.44 5s1.5.67 1.5 1.5zM4 9h2.89v9H4V9zm5.27 0h2.77v1.23h.04c.39-.74 1.32-1.52 2.72-1.52 2.91 0 3.45 1.92 3.45 4.42V18h-2.89v-4.1c0-.98-.02-2.23-1.36-2.23-1.36 0-1.57 1.06-1.57 2.15V18H9.27V9z"></path>
+          </svg>
+        </a>
+        <a class="btn s-x" id="shX"   target="_blank" rel="noopener">X (Twitter)</a>
+        <a class="btn s-facebook"  id="shFB"  target="_blank" rel="noopener">
+          Facebook
+          <svg class="ct-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <!-- Facebook “f” glyph (inherits currentColor) -->
+            <path fill="currentColor"
+              d="M22 12a10 10 0 1 0-11.56 9.87v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.62.76-1.62 1.54V12h2.76l-.44 2.88h-2.32v6.99A10 10 0 0 0 22 12z"/>
+          </svg>
+        </a>
+        <a class="btn s-email" id="shMail">
+          Email
+          <svg class="ct-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <!-- Envelope outline + flap; inherits currentColor -->
+            <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a class="btn s-sms"       id="shSMS">
+          SMS
+          <svg class="ct-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <!-- Chat bubble with two lines; inherits currentColor -->
+            <path d="M20 15a4 4 0 0 1-4 4H9l-5 3v-3.5A4 4 0 0 1 4 15V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M7.5 9.5h9M7.5 12.5h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <button class="btn s-copy" id="shCopy" type="button">
+          Copy link
+          <svg class="ct-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <!-- Two overlapping rounded squares (copy) -->
+            <rect x="9" y="9" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+            <rect x="5" y="5" width="10" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Share - End -->
+
+  <!-- Footer - Start -->
+  <footer class="fixed bottom-0 left-0 w-full bg-white text-center text-sm text-gray-500 p-4 shadow" id="footer">
+    Built by Nitesh Harjilawala • Let’s connect! <span class="text-md">🤝</span> • The page is actively maintained and subject to updates.
+  </footer>
+  <!-- Footer - End -->
+
+  <!-- google form Modal - Start -->
+  <div id="contactModal"
+    class="fixed inset-0 z-50 bg-black bg-opacity-60 flex items-center justify-center hidden overflow-y-auto">
+    <div class="bg-white max-w-2xl w-full mx-4 my-8 p-6 rounded-lg shadow-lg relative overflow-y-auto max-h-[90vh] h-full">
+      <button onclick="document.getElementById('contactModal').classList.add('hidden');" class="absolute top-3 right-4 text-gray-600 text-2xl font-bold z-10">&times;</button>
+      <div id="loader" class="absolute inset-0 flex flex-col items-center justify-center bg-white z-10">
+        <div class="animate-spin rounded-full h-12 w-12 border-t-4 border-blue-500 border-solid mb-4"></div>
+        <p class="text-gray-600 text-sm">Loading form, please wait...</p>
+      </div>
+      <div id="iframe-wrapper" class="pb-8"></div>
+      <div class="absolute bottom-0 left-0 w-full bg-white p-2 shadow"><div class="text-right text-xs text-gray-500 p-2">- This form is securely hosted by Google Forms.</div></div>
+    </div>
+  </div>
+  <!-- google form Modal - End -->
+  <button id="scrollTopBtn" title="Go to top">↑</button> <!-- scroll to top button -->
+
+  <!-- preloader - Start -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+  <!-- preloader - End -->
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+
+    // Active link on scroll
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active-link");
+        if (link.getAttribute("href") === `#${current}`) {
+          link.classList.add("active-link");
+        }
+      });
+    });
+
+    // toggle show/hide
+    function toggleSection(sectionId, iconId, caption) {
+      if(caption === undefined) caption="";
+      const section = document.getElementById(sectionId);
+      const icon = document.getElementById(iconId);
+      section.classList.toggle('hidden');
+      icon.textContent = (caption === "") ? (icon.textContent === '−' ? '+' : '−') : (icon.textContent === 'Read Less...' ? 'Read More...' : 'Read Less...');
+    }
+
+    // on load
+    window.addEventListener('load', function () {
+      const preloader = document.getElementById('preloader');
+      preloader.classList.add('fade-out');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    });
+
+    // scroll to top - Start
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    // Show/hide button when scrolling
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 200) {
+        scrollTopBtn.classList.add("show");
+      } else {
+        scrollTopBtn.classList.remove("show");
+      }
+    });
+
+    // Smooth scroll to top
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+    // scroll to top - End
+
+    function loadGForm()
+    {
+      document.getElementById('contactModal').classList.remove('hidden');
+      let frmElem = document.getElementById('gcontactfrm');
+      if(frmElem === undefined || frmElem === null)
+      {
+        const container = document.getElementById('iframe-wrapper');
+        container.innerHTML = `
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftuZwRBaENgF4e2zxhcDYIKtACOT6oGyNcvha6nxB4Jd63aA/viewform?embedded=true" frameborder="0" id="gcontactfrm" class="w-full h-[90vh] border-none" onload="document.getElementById('loader').style.display='none';">Loading…</iframe>
+        `;
+      }
+    }
+
+    const ev = (name, data) => window.clarity && clarity('event', name, data);
+    // Click events
+    document.getElementById('btn-resume-dl')?.addEventListener('click', () => ev('download_resume'));
+    document.getElementById('btn-install') ?.addEventListener('click', () => ev('install_pwa'));
+    document.getElementById('linkedin-contact')?.addEventListener('click', () => ev('contact_linkedin'));
+    document.getElementById('email-contact')   ?.addEventListener('click', () => ev('contact_email'));
+    document.getElementById('install-contact')   ?.addEventListener('click', () => ev('contact_install'));
+    document.getElementById('form-contact')   ?.addEventListener('click', () => ev('contact_form'));
+    document.getElementById('btn-see-all')   ?.addEventListener('click', () => ev('see_all_skill'));
+
+    // Mark when the Skills section is actually seen (not just on the page)
+    const skills = document.getElementById('skills');
+    if ('IntersectionObserver' in window && skills) {
+      let logged = false;
+      new IntersectionObserver(([entry], obs) => {
+        if (!logged && entry.isIntersecting && entry.intersectionRatio > 0.4) {
+          ev('view_skills'); logged = true; obs.disconnect();
+        }
+      }, { threshold: [0, 0.4, 1] }).observe(skills);
+    }
+    clarity('set', 'release', 'v1.0.0');
+    setTimeout(() => {
+      if (!window.clarity) console.warn('[Clarity] Script not loaded (blocked by tracker/extension or network).');
+    }, 3000);
+
+    // Share - Start
+    function shareAction() {
+      const baseUrl = 'https://nits2611.github.io/resume-view/';
+      const title   = "Nitesh Harjilawala — Resume & Contact";
+      const text    = "Resume, experience, and quick contact:";
+
+      // Build channel-tagged URLs
+      const urlWA  = baseUrl + '?via=share_whatsapp';
+      const urlLI  = baseUrl + '?via=share_linkedin';
+      const urlX   = baseUrl + '?via=share_x';
+      const urlFB  = baseUrl + '?via=share_facebook';
+      const urlEM  = baseUrl + '?via=share_email';
+      const urlSMS = baseUrl + '?via=share_sms';
+
+      // Native share (mobile)
+      const btnNative = document.getElementById('btnShareNative');
+      if (navigator.share) {
+        btnNative.hidden = false;
+        btnNative.addEventListener('click', async () => {
+          try {
+            await navigator.share({ title, text, url: baseUrl + '?via=share_native' });
+            window.clarity && clarity('event','share_native');
+          } catch(_) {}
+        });
+      }
+
+      // Fallback links
+      const enc = encodeURIComponent;
+      document.getElementById('shWA').href  = 'https://wa.me/?text=' + enc(`${text} ${urlWA}`);
+      document.getElementById('shLI').href  = 'https://www.linkedin.com/sharing/share-offsite/?url=' + enc(urlLI);
+      document.getElementById('shX').href   = 'https://twitter.com/intent/tweet?text=' + enc(text) + '&url=' + enc(urlX);
+      document.getElementById('shFB').href  = 'https://www.facebook.com/sharer/sharer.php?u=' + enc(urlFB);
+      document.getElementById('shMail').href= 'mailto:?subject=' + enc(title) + '&body=' + enc(`${text} ${urlEM}`);
+
+      // SMS: iOS uses "sms:&body", Android "sms:?body"
+      const smsBody = enc(`${text} ${urlSMS}`);
+      document.getElementById('shSMS').href = /iPad|iPhone|iPod/i.test(navigator.userAgent)
+          ? `sms:&body=${smsBody}` : `sms:?body=${smsBody}`;
+
+      // Copy link
+      document.getElementById('shCopy').addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(baseUrl + '?via=share_copy');
+          alert('Link copied!');
+          window.clarity && clarity('event','share_copy');
+        } catch { alert('Copy failed'); }
+      });
+
+      // Optional: event tags for each click (if you use Clarity)
+      const tag = (id, name) => document.getElementById(id)?.addEventListener('click', () =>
+        window.clarity && clarity('event', name));
+      tag('shWA','share_whatsapp'); tag('shLI','share_linkedin'); tag('shX','share_x');
+      tag('shFB','share_facebook'); tag('shMail','share_email'); tag('shSMS','share_sms');
+
+      // Instagram note: there is no direct “share to feed” URL; users copy the link (Copy button covers this).
+    };
+    shareAction();
+    // Share- End
+    function btnResumeLinkAdd()
+    {
+      var btnResumeDl=document.getElementById("btn-resume-dl");
+      btnResumeDl.setAttribute("href", "assets/documents/Nitesh-Harjilawala_Full-Stack-Developer_Canada.pdf?v="+V);
+    }
+    btnResumeLinkAdd();
+  </script>
+  <script data-goatcounter="https://nits2611.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+    // mirror critical events
+    function gc(name, props={}) {
+      if (window.goatcounter && goatcounter.count) {
+        goatcounter.count({ path: 'event/'+name, title: document.title, event: true, ...props });
+      }
+    }
+    document.getElementById('btn-resume-dl')?.addEventListener('click', () => gc('download_resume'));
+    document.getElementById('btn-install') ?.addEventListener('click', () => gc('install_top'));
+    document.getElementById('install-contact') ?.addEventListener('click', () => gc('contact_install'));
+    document.getElementById('email-contact')   ?.addEventListener('click', () => gc('contact_email'));
+    document.getElementById('linkedin-contact')?.addEventListener('click', () => gc('contact_linkedin'));
+    document.getElementById('form-contact')?.addEventListener('click', () => gc('contact_form'));
+    document.getElementById('btn-see-all')?.addEventListener('click', () => gc('see_all_skills'));
+    document.getElementById('btn-read-more')?.addEventListener('click', () => gc('read_more_about'));
+
+    document.getElementById('btnShareNative')?.addEventListener('click', () => gc('share_page_native'));
+    document.getElementById('shWA')?.addEventListener('click', () => gc('share_page_WA'));
+    document.getElementById('shLI')?.addEventListener('click', () => gc('share_page_LI'));
+    document.getElementById('shX')?.addEventListener('click', () => gc('share_page_X'));
+    document.getElementById('shFB')?.addEventListener('click', () => gc('share_page_FB'));
+    document.getElementById('shMail')?.addEventListener('click', () => gc('share_page_Mail'));
+    document.getElementById('shSMS')?.addEventListener('click', () => gc('share_page_SMS'));
+    document.getElementById('shCopy')?.addEventListener('click', () => gc('share_page_CP'));
+  </script>
+</body>
+</html>

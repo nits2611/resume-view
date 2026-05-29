@@ -1,0 +1,39 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="620" rx="32" fill="#F8FAFC"/>
+  <rect x="42" y="44" width="816" height="532" rx="28" fill="white" stroke="#E2E8F0"/>
+  <circle cx="760" cy="116" r="86" fill="#E0F2FE" opacity=".8"/>
+  <circle cx="116" cy="500" r="72" fill="#DBEAFE" opacity=".55"/>
+  <g filter="url(#f)">
+    <rect x="86" y="112" width="164" height="72" rx="14" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
+    <rect x="86" y="248" width="164" height="72" rx="14" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
+    <rect x="86" y="384" width="164" height="72" rx="14" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
+    <text x="168" y="156" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#0F172A">OTA 1</text>
+    <text x="168" y="292" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#0F172A">OTA 2</text>
+    <text x="168" y="428" text-anchor="middle" font-family="Inter,Arial" font-size="26" font-weight="800" fill="#0F172A">OTA N</text>
+  </g>
+  <path d="M250 148 C322 148 318 222 390 222" stroke="#2563EB" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M250 284 C322 284 318 284 390 284" stroke="#2563EB" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M250 420 C322 420 318 346 390 346" stroke="#2563EB" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <g filter="url(#f)">
+    <rect x="390" y="184" width="180" height="200" rx="24" fill="#FFFFFF" stroke="#93C5FD" stroke-width="3"/>
+    <circle cx="480" cy="254" r="40" fill="#DBEAFE"/>
+    <path d="M466 254l18-18M466 254l18 18M494 236l-18 18M494 272l-18-18" stroke="#2563EB" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="480" y="330" text-anchor="middle" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#0F172A">Integration</text>
+    <text x="480" y="360" text-anchor="middle" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#0F172A">Mediator</text>
+  </g>
+  <path d="M570 284 L676 284" stroke="#0F766E" stroke-width="6" stroke-linecap="round"/>
+  <path d="M652 260 L676 284 L652 308" stroke="#0F766E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#f)">
+    <rect x="676" y="184" width="150" height="200" rx="24" fill="#F0FDFA" stroke="#5EEAD4" stroke-width="3"/>
+    <rect x="718" y="272" width="18" height="48" rx="5" fill="#2563EB"/>
+    <rect x="748" y="238" width="18" height="82" rx="5" fill="#00B4D8"/>
+    <rect x="778" y="210" width="18" height="110" rx="5" fill="#0F766E"/>
+    <path d="M716 236l40-34 44 18" stroke="#2563EB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="751" y="360" text-anchor="middle" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#0F172A">Core System</text>
+  </g>
+  <rect x="315" y="474" width="270" height="54" rx="27" fill="#E0F2FE" stroke="#BAE6FD"/>
+  <text x="450" y="509" text-anchor="middle" font-family="Inter,Arial" font-size="23" font-weight="800" fill="#0369A1">Faster onboarding flow</text>
+  <defs>
+    <filter id="f" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0F172A" flood-opacity=".12"/></filter>
+  </defs>
+</svg>

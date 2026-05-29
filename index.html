@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- <meta http-equiv="refresh" content="0; url=maintenance.html"> --> <!-- maintenance mode -->
+  <!-- ========================== OPEN GRAPH - START ========================== -->
+  <!-- ======================================================================== -->
+  <!-- Open Graph tags (used by LinkedIn, Facebook, etc.) - start -->
+   <!-- Primary: wide banner -->
+  <meta property="og:image" content="https://nits2611.github.io/resume-view/assets/images/banners/preview-banner-1200x630.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Secondary: square fallback (WhatsApp-friendly) -->
+  <meta property="og:image" content="https://nits2611.github.io/resume-view/assets/images/banners/preview-banner-1200.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
+
+  <!-- Common OG basics -->
+  <meta property="og:title" content="Nitesh Harjilawala | Full-Stack Web Developer | PHP • JS • MySQL • More">
+  <meta property="og:description" content="Passionate Software Developer with expertise in PHP, JS, and web apps. Blending technical depth with leadership experience.">
+  <meta property="og:url" content="https://nits2611.github.io/resume-view/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nitesh Harjilawala">
+
+  <!-- Twitter Card (used by Twitter/X) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nitesh Harjilawala | Web Developer | PHP • JS • MySQL • More">
+  <meta name="twitter:description" content="Passionate Software Developer with expertise in PHP, JS, and web apps. Blending technical depth with leadership experience.">
+  <meta name="twitter:image" content="https://nits2611.github.io/resume-view/assets/images/banners/preview-banner-1200x630.png">
+  <meta name="twitter:image:alt" content="Nitesh Harjilawala Portfolio">
+  <!-- ====================================================================== -->
+  <!-- ========================== OPEN GRAPH - END ========================== -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- responsive -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <!-- ========================== SEO - START ========================== -->
+  <!-- ================================================================= -->
+  <meta name="description" content="Resume & Portfolio of Nitesh Harjilawala, backend-focused full-stack developer specializing in PHP, MySQL, APIs, SaaS systems, react, front-end, secure coding and performance optimization." />
+  <link rel="canonical" href="https://nits2611.github.io/resume-view/">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Nitesh Harjilawala">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person",
+  "name":"Nitesh Harjilawala","jobTitle":"Web Developer",
+  "url":"https://nits2611.github.io/resume-view/",
+  "sameAs":["https://www.linkedin.com/in/nitesh-harjilawala/","https://github.com/nits2611"]}
+  </script>
+  <!-- ================================================================= -->
+  <!-- =========================== SEO - END =========================== -->
+
+  <!-- ========================== TITLE - START ========================== -->
+  <!-- =================================================================== -->
+  <title>Nitesh Harjilawala | Backend-Focused Full-Stack Developer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>" />
+  <!-- ================================================================= -->
+  <!-- ========================== TITLE - END ========================== -->
+
+  <!-- ========================== LOAD RESOURCES - START ========================== -->
+  <!-- ============================================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    const V='1.0.0.4'; //version
+    const isMinified = (location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.protocol === "file:") ? "" : ".min";
+    if(typeof(makeElem) === "undefined" || makeElem === undefined)
+    {
+      function makeElem(tagName, parentElem, attributes = {})
+      {
+          try
+          {
+              const elem = document.createElement(tagName);
+              for (const [key, value] of Object.entries(attributes))
+                  elem.setAttribute(key, value);
+              parentElem.appendChild(elem);
+          }
+          catch(e)
+          {
+              console.error("Caught Error (CSW.JS - makeElem): ", e);
+          }
+      }
+    }
+    loadResources();
+    function loadResources()
+    {
+      makeElem('link', document.head, attributes = {rel : 'stylesheet', href : ('resources/css/style'+isMinified+'.css?v=' + V)}); // load css
+    }
+  </script>
+  <!-- ========================================================================== -->
+  <!-- ========================== LOAD RESOURCES - END ========================== -->
+  <style>
+    /* =========================
+   pre-loader - start
+========================= */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #001b66, #0f766e);
+  color: #dff9ff;
+  text-align: center;
+  cursor: wait;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.55s ease, visibility 0.55s ease;
+}
+
+.page-loader.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  cursor: default;
+}
+
+.loader-inner {
+  display: grid;
+  place-items: center;
+}
+
+.logo-wrap {
+  position: relative;
+  width: 95px;
+  height: 81px;
+}
+
+.logo-wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(103, 232, 249, 0.38));
+}
+
+.nh-left {
+  animation: nhLeftIn 0.9s ease forwards;
+}
+
+.nh-right {
+  animation: nhRightIn 0.9s ease forwards;
+}
+
+.page-loader p {
+  margin: 16px 0 0;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  opacity: 0;
+  animation: loaderTextIn 0.45s ease forwards 0.75s;
+}
+
+@keyframes nhLeftIn {
+  from {
+    transform: translateX(-54px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes nhRightIn {
+  from {
+    transform: translateX(54px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes loaderTextIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nh-left,
+  .nh-right,
+  .page-loader p {
+    animation: none;
+    opacity: 1;
+  }
+}
+/* pre-loader - end */
+  </style>
+</head>
+
+<body>
+  <nav class="site-navbar" id="siteNavbar">
+    <div class="nav-container">
+      <a class="nav-brand" href="#hero" aria-label="Go to home">
+        <img src="assets/icons/nit-logo-60p.webp" alt="Nitesh Logo" class="nav-logo" onerror="this.style.display='none'">
+        <span class="nav-fallback-logo">NH</span>
+        <span class="nav-brand-text">Nitesh <strong>H.</strong></span>
+      </a>
+      <div class="nav-menu desktop-menu">
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-btn" type="button">
+            Profile
+            <span class="nav-caret">
+              <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                <polygon points="1,3 9,3 5,7" fill="currentColor" />
+              </svg>
+            </span>
+          </button>
+          <div class="nav-dropdown-panel">
+            <a class="nav-dropdown-link" href="#about">About</a>
+            <a class="nav-dropdown-link" href="#skills">Skills</a>
+            <a class="nav-dropdown-link" href="#experience">Experience</a>
+            <a class="nav-dropdown-link" href="#achievement">Achievements</a>
+            <a class="nav-dropdown-link" href="#academic">Academic</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#case-studies">Case Studies</a>
+        <a class="nav-link" href="#testimonials">Testimonials</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open navigation menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a class="mobile-link" href="#hero">Home</a>
+      <button class="mobile-link mobile-profile-btn" id="mobileProfileBtn" type="button">Profile <span
+          id="mobileProfileIcon">+</span></button>
+      <div class="mobile-submenu" id="mobileProfileMenu">
+        <a class="mobile-link mobile-sub-link" href="#about">About</a>
+        <a class="mobile-link mobile-sub-link" href="#skills">Skills</a>
+        <a class="mobile-link mobile-sub-link" href="#experience">Experience</a>
+        <a class="mobile-link mobile-sub-link" href="#achievement">Achievements</a>
+        <a class="mobile-link mobile-sub-link" href="#academic">Academic</a>
+      </div>
+      <a class="mobile-link" href="#case-studies">Case Studies</a>
+      <a class="mobile-link" href="#testimonials">Testimonials</a>
+      <a class="mobile-link" href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-left reveal">
+          <div class="hero-photo-card"><img src="assets/images/hero/Nit-300p.png" alt="Nitesh Harjilawala" class="hero-photo"></div>
+        </div>
+        <div class="hero-right reveal">
+          <p class="hero-status">Available for Developer Opportunities</p>
+          <h2>Hello, I am </h2>
+          <h1 class="hero-title"><span>Nitesh Harjilawala</span></h1>
+          <h2 class="hero-role">Backend-Focused Full-Stack Developer</h2>
+          <p class="hero-summary">I build scalable SaaS systems, API integrations, and performance-optimized web
+            applications by ensuring security compliances.</p>
+          <div class="hero-tags">
+            <span>PHP</span>
+            <span>Laravel</span>
+            <span>MySQL</span>
+            <span>REST APIs</span>
+            <span>SaaS</span>
+            <span>React</span>
+          </div>
+          <div class="hero-actions"><a href="#case-studies" class="hero-btn hero-btn-primary">View Case Study</a><a
+              href="assets/documents/Nitesh-Harjilawala_Full-Stack-Developer_Canada.pdf" target="_blank"
+              class="hero-btn hero-btn-outline">Download Resume</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-bar" aria-label="Professional highlights">
+      <div class="proof-container reveal">
+        <div class="proof-card"><span class="proof-number">5+</span><span class="proof-label">Years Experience</span>
+        </div>
+        <div class="proof-card"><span class="proof-number">SaaS</span><span class="proof-label">Product
+            Development</span></div>
+        <div class="proof-card"><span class="proof-number">150+</span><span class="proof-label">OTA Ecosystem
+            Exposure</span></div>
+        <div class="proof-card"><span class="proof-number">APIs</span><span class="proof-label">Integration &
+            Optimization</span></div>
+      </div>
+    </section>
+
+    <section id="case-studies" class="case-study-section">
+      <div class="case-container reveal">
+        <p class="section-kicker">Featured Case Study</p>
+        <h2 class="case-title">Real-world problem solving, not just portfolio decoration</h2>
+        <div class="case-card">
+          <div class="case-left"><img src="assets/images/case-study/case-study-ota.svg"
+              alt="OTA integration onboarding case study illustration" loading="lazy"></div>
+          <div class="case-right">
+            <h3 class="case-heading">Reduced OTA Onboarding from 4–6 Months to Under a Week</h3>
+            <p class="case-desc">Designed a reusable integration approach for a hospitality SaaS platform handling 150+
+              OTA connections, improving onboarding speed and reducing repeated engineering effort.</p>
+            <div class="case-bullets"><span>✓ Reusable integration layer</span><span>✓ Faster client
+                go-live</span><span>✓ Lower repeated development effort</span></div>
+            <div class="case-highlights"><span>150+ OTA Ecosystem</span><span>API Integration</span><span>SaaS
+                Platform</span><span>System Design</span></div>
+            <a href="case-studies/ota-integration.html" class="case-btn">Read Full Case Study →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-container reveal">
+        <h2 class="about-title">About Me</h2>
+        <p class="about-text">I am a backend-focused full-stack developer with 5+ years of experience building scalable
+          SaaS applications, API integrations, and performance-optimized systems.</p>
+        <p class="about-text">I have worked on high-impact platforms handling complex business logic, large-scale
+          integrations, and production workflows across multiple systems.</p>
+        <div class="about-highlights">
+          <div class="about-item"><span>✓</span>
+            <p>Strong experience in PHP, MySQL, and REST APIs</p>
+          </div>
+          <div class="about-item"><span>✓</span>
+            <p>Built scalable SaaS systems and integration workflows</p>
+          </div>
+          <div class="about-item"><span>✓</span>
+            <p>Optimized performance and reduced system bottlenecks</p>
+          </div>
+          <div class="about-item"><span>✓</span>
+            <p>Experience with production systems and cross-team delivery</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <div class="skills-container reveal">
+        <h2 class="skills-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skills-card">
+            <h3 class="skills-heading">Backend</h3>
+            <div class="skills-tags"><span>PHP</span><span>Laravel</span><span>CodeIgniter</span><span>REST
+                APIs</span><span>Node.js Basics</span></div>
+          </div>
+          <div class="skills-card">
+            <h3 class="skills-heading">Database</h3>
+            <div class="skills-tags"><span>MySQL</span><span>MongoDB</span><span>Query
+                Optimization</span><span>Indexing</span></div>
+          </div>
+          <div class="skills-card">
+            <h3 class="skills-heading">Frontend</h3>
+            <div class="skills-tags">
+              <span>JavaScript</span><span>jQuery</span><span>React</span><span>HTML</span><span>CSS</span><span>Bootstrap</span>
+              <span>Ajax</span>
+            </div>
+          </div>
+          <div class="skills-card">
+            <h3 class="skills-heading">Tools & Practices</h3>
+            <div class="skills-tags"><span>Git</span><span>API Integration</span><span>Performance
+                Optimization</span><span>Debugging</span><span>Agile/Scrum</span>
+                <span>Secure Coding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+      <div class="experience-container reveal">
+        <h2 class="experience-title">Work Experience</h2>
+        <div class="experience-timeline">
+          <article class="experience-item">
+            <div class="experience-dot"></div>
+            <div class="experience-card">
+              <div class="experience-header">
+                <div>
+                  <h3>Senior Software Developer</h3>
+                  <p>STAAH Hotel Software Pvt. Ltd.</p>
+                </div><span>Mar 2022 – Oct 2023</span>
+              </div>
+              <ul>
+                <li>Developed and optimized REST APIs, backend workflows, and SaaS product features.</li>
+                <li>Improved backend performance through MySQL query optimization and code-level improvements.</li>
+                <li>Collaborated with QA, support, product, and cross-functional teams to deliver stable releases.</li>
+                <li>Mentored junior developers and supported technical training within the team.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-dot"></div>
+            <div class="experience-card">
+              <div class="experience-header">
+                <div>
+                  <h3>PHP Developer</h3>
+                  <p>UPQOR Pvt. Ltd.</p>
+                </div><span>Feb 2021 – Dec 2021</span>
+              </div>
+              <ul>
+                <li>Built backend modules and APIs for web applications using PHP, MySQL, JavaScript, and Angular.</li>
+                <li>Collaborated with designers, QA, and project stakeholders across the development lifecycle.</li>
+                <li>Created reusable components and supported frontend/backend integration work.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="experience-dot"></div>
+            <div class="experience-card">
+              <div class="experience-header">
+                <div>
+                  <h3>Associate Software Engineer</h3>
+                  <p>eZee Technosys Pvt. Ltd.</p>
+                </div><span>May 2018 – Feb 2021</span>
+              </div>
+              <ul>
+                <li>Worked on hospitality SaaS products including PMS and channel manager integrations.</li>
+                <li>Contributed to API integrations, backend development, security reviews, and release coordination.
+                </li>
+                <li>Supported PCI-DSS/GDPR-aware development practices and production deployment workflows.</li>
+                <li>Recognized for innovation through hackathon-driven system improvement work.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievement" class="achievement-section">
+      <div class="achievement-container reveal">
+        <h2 class="achievement-title">Notable Achievements</h2>
+        <div class="achievement-grid">
+          <article class="achievement-card">
+            <div class="achievement-icon">🏆</div>
+            <div>
+              <h3>Innovation & Contribution Awards</h3>
+              <p class="achievement-meta">eZee Technosys Pvt. Ltd.</p>
+              <p>Recognized with internal rewards for proposing and delivering impactful system improvements that
+                supported product efficiency and innovation.</p>
+            </div>
+          </article>
+          <article class="achievement-card">
+            <div class="achievement-icon">🌟</div>
+            <div>
+              <h3>Outstanding Project Delivery</h3>
+              <p class="achievement-meta">STAAH Hotel Software Pvt. Ltd.</p>
+              <p>Recognized for delivering a high-priority project within tight timelines while maintaining quality and
+                technical execution.</p>
+            </div>
+          </article>
+          <article class="achievement-card">
+            <div class="achievement-icon">🌐</div>
+            <div>
+              <h3>Global Leadership Conference</h3>
+              <p class="achievement-meta">Leadership Development</p>
+              <p>Participated in leadership events focused on responsible leadership, governance, collaboration, and
+                sustainable growth.</p>
+            </div>
+          </article>
+          <article class="achievement-card">
+            <div class="achievement-icon">🤝</div>
+            <div>
+              <h3>Team Collaboration & Mentorship</h3>
+              <p class="achievement-meta">Professional Growth</p>
+              <p>Supported junior developers, collaborated across teams, and contributed to a learning-oriented
+                engineering environment.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="academic" class="academic-section">
+      <div class="academic-container reveal">
+        <h2 class="academic-title">Academic Background</h2>
+        <div class="academic-grid">
+          <article class="academic-card">
+            <div class="academic-icon">🎓</div>
+            <div>
+              <h3>Master of Arts in Leadership</h3>
+              <p class="academic-meta">Canada • Completed 2025</p>
+              <p>Focused on leadership, organizational development, ethical decision-making, and collaboration in
+                multicultural environments.</p>
+            </div>
+          </article>
+          <article class="academic-card">
+            <div class="academic-icon">💻</div>
+            <div>
+              <h3>Master of Computer Applications</h3>
+              <p class="academic-meta">India • Completed 2018</p>
+              <p>Specialized in web development, software engineering, database systems, and application architecture.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+      <div class="testimonials-container reveal">
+        <h2 class="testimonials-title">What People Say</h2>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="assets/images/testimonials/kani.jpeg" alt="Kanishka Gunawardana" class="testimonial-avatar" loading="lazy"/>
+              <div>
+                <h3>Kanishka Gunawardana</h3>
+                <p>Human Resources Consultant • Telus Digital</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              <span class="testimonial-inverted-comma">“</span>I had the pleasure of working alongside Nitesh during our Master’s in Leadership. His calm presence, positive mindset, and thoughtful perspective brought great depth to every group project. Energetic, kind, and guided by strong ethics, he’s a genuine team player who always listens, learns, and lifts others. A remarkable collaborator and an even better human.<span class="testimonial-inverted-comma">”</span>
+            </p>
+            <div class="testimonial-source">
+              💬 Shared via Direct Feedback
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="assets/images/testimonials/hitesh.jpeg" alt="Hitesh Patel" class="testimonial-avatar" loading="lazy"/>
+              <div>
+                <h3>Hitesh Patel</h3>
+                <p>Head of Web Support • Staah Hotel Software Pvt. Ltd.</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              <span class="testimonial-inverted-comma">“</span>I am delighted to recommend Nitesh. Having worked closely with him for over a year, I can confidently say he combines expertise, dedication, and a genuinely great personality. A pleasure to collaborate with.<span class="testimonial-inverted-comma">”</span>
+            </p>
+            <div class="testimonial-source">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="inline-block mr-2">
+                <rect width="24" height="24" rx="4" fill="#0A66C2"></rect>
+                <path fill="#fff" d="M6.94 6.5C6.94 7.33 6.27 8 5.44 8S3.94 7.33 3.94 6.5 4.61 5 5.44 5s1.5.67 1.5 1.5zM4 9h2.89v9H4V9zm5.27 0h2.77v1.23h.04c.39-.74 1.32-1.52 2.72-1.52 2.91 0 3.45 1.92 3.45 4.42V18h-2.89v-4.1c0-.98-.02-2.23-1.36-2.23-1.36 0-1.57 1.06-1.57 2.15V18H9.27V9z"></path>
+              </svg>
+              &nbsp; Shared via LinkedIn
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-header">
+              <img src="assets/images/testimonials/karan.jpeg" alt="Karan Rochani" class="testimonial-avatar" loading="lazy"/>
+              <div>
+                <h3>Karan Rochani</h3>
+                <p>Customer Success Manager • Yanolja Cloud Solutions</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              <span class="testimonial-inverted-comma">“</span>Despite being in different teams, Nitesh was always ready to lend a hand whenever we faced any technical issues that required his expertise. His quick response and collaborative nature helped our teams serve clients more efficiently. He's always learning and improving, staying current with technology to deliver top-quality work.<span class="testimonial-inverted-comma">”</span>
+            </p>
+            <div class="testimonial-source">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="inline-block mr-2">
+                <rect width="24" height="24" rx="4" fill="#0A66C2"></rect>
+                <path fill="#fff" d="M6.94 6.5C6.94 7.33 6.27 8 5.44 8S3.94 7.33 3.94 6.5 4.61 5 5.44 5s1.5.67 1.5 1.5zM4 9h2.89v9H4V9zm5.27 0h2.77v1.23h.04c.39-.74 1.32-1.52 2.72-1.52 2.91 0 3.45 1.92 3.45 4.42V18h-2.89v-4.1c0-.98-.02-2.23-1.36-2.23-1.36 0-1.57 1.06-1.57 2.15V18H9.27V9z"></path>
+              </svg>
+              &nbsp; Shared via LinkedIn
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-container reveal">
+        <h2 class="contact-title">Let’s Connect</h2>
+        <p class="contact-subtitle">Open to developer opportunities, technical conversations, and meaningful
+          collaborations.</p>
+        <div class="contact-grid">
+          <a href="mailto:niteshharjilawala@gmail.com" class="contact-card"><span class="contact-icon">✉️</span>
+            <div>
+              <h3>Email</h3>
+              <p>Send me a message</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/nitesh-harjilawala/" target="_blank" class="contact-card"><span
+              class="contact-icon">💼</span>
+            <div>
+              <h3>LinkedIn</h3>
+              <p>Connect professionally</p>
+            </div>
+          </a>
+          <!-- <a href="https://github.com/nits2611" target="_blank" class="contact-card"><span
+              class="contact-icon">💻</span>
+            <div>
+              <h3>GitHub</h3>
+              <p>View my code</p>
+            </div>
+          </a> -->
+          <a class="contact-card" id="btn-install">
+            <span class="contact-icon">📲</span>
+            <div>
+              <h3>Install App</h3>
+              <p>For quick access</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Nitesh Harjilawala</h3>
+          <p>Backend-Focused Full-Stack Developer building scalable SaaS systems and API-driven applications.</p>
+        </div>
+        <div class="footer-actions">
+          <button class="footer-btn" id="sharePortfolioBtn">Share Portfolio</button>
+          <button class="footer-btn" id="copyPortfolioBtn">Copy Link</button>
+          <a href="https://www.linkedin.com/in/nitesh-harjilawala/" target="_blank" class="footer-btn footer-btn-link">LinkedIn</a>
+        </div>
+      </div>
+    </div><button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+  </footer>
+  
+  <footer class="sticky-footer">
+    <div class="footer-bottom">
+      <p>By <b><a href="https://www.linkedin.com/in/nitesh-harjilawala/" target="_blank">Nitesh Harjilawala</a></b> • Let’s connect! 🤝 • The page is actively maintained and subject to updates.</p>
+    </div>
+  </footer>
+  <!-- ============================= PRELOADER - START ============================= -->
+  <!-- ============================================================================= -->
+  <div class="page-loader" id="app-preloader" aria-label="Loading portfolio">
+    <div class="loader-inner">
+      <div class="logo-wrap">
+        <img class="nh-left" src="assets/icons/svg/nh-logo-left.svg" alt="">
+        <img class="nh-right" src="assets/icons/svg/nh-logo-right.svg" alt="NH logo">
+      </div>
+      <p>Building connections...🤝</p>
+    </div>
+  </div>
+  <!-- ============================================================================= -->
+  <!-- ============================== PRELOADER - END ============================== -->
+
+  <!-- =============================== LOAD JS - START ============================= -->
+  <!-- ============================================================================= -->
+  <script src="resources/js/app.js" defer=""></script>
+  <script src="resources/js/csw.js" defer=""></script>
+  <!-- ============================================================================= -->
+  <!-- =============================== LOAD JS - END =============================== -->
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study | OTA Integration Onboarding Optimization</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>" />
+  <meta name="description" content="Case study by Nitesh Harjilawala: reducing OTA onboarding time through integration standardization and reusable system design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../resources/css/style.css" />
+</head>
+<body>
+  <nav class="site-navbar" id="siteNavbar">
+    <div class="nav-container">
+      <a class="nav-brand" href="#hero" aria-label="Go to home">
+        <img src="../assets/icons/nit-logo-60p.webp" alt="Nitesh Logo" class="nav-logo" onerror="this.style.display='none'">
+        <span class="nav-fallback-logo">NH</span>
+        <span class="nav-brand-text">Nitesh <strong>H.</strong></span>
+      </a>
+      <div class="nav-menu desktop-menu">
+        <div class="nav-dropdown">
+          <button class="nav-link nav-dropdown-btn" type="button">
+            Profile
+            <span class="nav-caret">
+              <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
+                <polygon points="1,3 9,3 5,7" fill="currentColor" />
+              </svg>
+            </span>
+          </button>
+          <div class="nav-dropdown-panel">
+            <a class="nav-dropdown-link" href="#about">About</a>
+            <a class="nav-dropdown-link" href="#skills">Skills</a>
+            <a class="nav-dropdown-link" href="#experience">Experience</a>
+            <a class="nav-dropdown-link" href="#achievement">Achievements</a>
+            <a class="nav-dropdown-link" href="#academic">Academic</a>
+          </div>
+        </div>
+        <a class="nav-link" href="#case-studies">Case Studies</a>
+        <a class="nav-link" href="#testimonials">Testimonials</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open navigation menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a class="mobile-link" href="#hero">Home</a>
+      <button class="mobile-link mobile-profile-btn" id="mobileProfileBtn" type="button">Profile <span
+          id="mobileProfileIcon">+</span></button>
+      <div class="mobile-submenu" id="mobileProfileMenu">
+        <a class="mobile-link mobile-sub-link" href="#about">About</a>
+        <a class="mobile-link mobile-sub-link" href="#skills">Skills</a>
+        <a class="mobile-link mobile-sub-link" href="#experience">Experience</a>
+        <a class="mobile-link mobile-sub-link" href="#achievement">Achievements</a>
+        <a class="mobile-link mobile-sub-link" href="#academic">Academic</a>
+      </div>
+      <a class="mobile-link" href="#case-studies">Case Studies</a>
+      <a class="mobile-link" href="#testimonials">Testimonials</a>
+      <a class="mobile-link" href="#contact">Contact</a>
+    </div>
+  </nav>
+  <main>
+    <section class="case-detail-hero">
+      <div class="case-detail-wrap">
+        <div class="reveal">
+          <a class="back-link" href="../index.html#case-studies">← Back to Portfolio</a>
+          <p class="hero-status">Case Study • Hospitality SaaS</p>
+          <h1 class="case-detail-title">Reduced OTA Onboarding from Months to Days</h1>
+          <p class="case-detail-summary">A real-world engineering story about identifying repeated integration effort, standardizing the core workflow, and reducing onboarding complexity without exposing proprietary business logic.</p>
+          <div class="case-detail-tags"><span>PHP</span><span>MySQL</span><span>API Integration</span><span>System Design</span><span>Legacy Systems</span></div>
+        </div>
+        <div class="case-detail-visual reveal"><img src="../assets/images/case-study/case-study-ota.svg" alt="OTA integration optimization illustration"></div>
+      </div>
+    </section>
+    <section class="impact-strip">
+      <div class="impact-grid reveal"><div class="impact-card"><strong>4–6 mo</strong><span>Original onboarding cycle</span></div><div class="impact-card"><strong>&lt;1 wk</strong><span>Improved cycle in many cases</span></div><div class="impact-card"><strong>150+</strong><span>OTA ecosystem exposure</span></div><div class="impact-card"><strong>Reusable</strong><span>Integration approach</span></div></div>
+    </section>
+    <section class="case-detail-section white"><div class="case-detail-container reveal"><h2>Context</h2><p>At eZee Technosys, I worked on a hospitality SaaS channel manager platform connected with many Online Travel Agencies. The system handled important operations such as inventory updates, rate synchronization, reservations, guest information, booking details, and payment-related flows.</p><p>When a new OTA needed to be onboarded, the process was technically correct but operationally slow. It often required repeated development, review, testing, and third-party coordination.</p></div></section>
+    <section class="case-detail-section"><div class="case-detail-container reveal"><h2>Challenge</h2><div class="detail-grid"><div class="detail-card"><h3>Business Pain</h3><ul><li>Long onboarding timelines affected client satisfaction.</li><li>Delayed partner integrations could slow client go-live.</li><li>Engineering resources were repeatedly pulled into similar work.</li></ul></div><div class="detail-card"><h3>Technical Constraints</h3><ul><li>Legacy production system with low tolerance for disruption.</li><li>Each OTA had different formats and authentication patterns.</li><li>Quality checks could not be ignored or bypassed.</li></ul></div></div></div></section>
+    <section class="case-detail-section white"><div class="case-detail-container reveal"><h2>Approach</h2><div class="process-list"><div class="process-item"><h3>Mapped the full onboarding lifecycle</h3><p>I reviewed the end-to-end flow, including requirement gathering, third-party API coordination, development, review, QA, and release readiness.</p></div><div class="process-item"><h3>Separated business operations from format differences</h3><p>The core OTA operations were mostly similar, but request/response formats and data structures varied. That difference became the main target for improvement.</p></div><div class="process-item"><h3>Designed a reusable integration layer</h3><p>The solution focused on configurable mappings and transformation logic so repeated custom development could be reduced for future integrations.</p></div><div class="process-item"><h3>Balanced speed with stability</h3><p>The goal was not to skip quality. The goal was to reduce repeated engineering effort while keeping validation, testing, and production safety intact.</p></div></div></div></section>
+    <section class="case-detail-section"><div class="case-detail-container reveal"><h2>Before vs After</h2><div class="before-after"><div class="detail-card before"><h3>Before</h3><ul><li>Repeated custom development for each OTA.</li><li>Long dependency on engineering and review cycles.</li><li>Client onboarding delays and frustration risk.</li><li>Higher chance of introducing bugs in repeated changes.</li></ul></div><div class="detail-card after"><h3>After</h3><ul><li>Reusable approach for common integration patterns.</li><li>Faster onboarding path for many OTA integrations.</li><li>Reduced repeated development workload.</li><li>Better stability by limiting unnecessary code changes.</li></ul></div></div></div></section>
+    <section class="case-detail-section white"><div class="case-detail-container reveal"><h2>Outcome</h2><p>The approach helped reduce new OTA onboarding time from a typical 4–6 month cycle to under a week in many cases, with some integrations possible within days depending on complexity and validation needs.</p><p>The bigger value was not only speed. It improved engineering efficiency, reduced repeated work, supported faster client go-live, and showed how workflow-level thinking can create stronger business impact than simply writing more code.</p></div></section>
+    <section class="case-detail-section"><div class="case-detail-container reveal"><h2>Key Learnings</h2><div class="detail-grid"><div class="detail-card"><h3>Fix the right problem</h3><p>The original process was not wrong. It was safe but slow. The real opportunity was reducing repeatable effort.</p></div><div class="detail-card"><h3>Protect confidentiality</h3><p>I can explain the approach and decision-making without exposing proprietary algorithms, internal data, or company-specific implementation details.</p></div><div class="detail-card"><h3>Think beyond code</h3><p>Strong engineering impact often comes from improving systems, workflows, and decision quality.</p></div><div class="detail-card"><h3>Balance risk and speed</h3><p>Fast delivery matters, but production stability and validation remain non-negotiable.</p></div></div></div></section>
+    <section class="case-cta"><h2>Want to discuss this case study?</h2><p>I would be happy to explain my problem-solving approach, trade-offs, and how I think through scalable backend systems.</p><div class="case-cta-actions"><a href="../index.html#contact" class="hero-btn hero-btn-primary">Contact Me</a><a href="../index.html#case-studies" class="hero-btn hero-btn-outline">Back to Portfolio</a></div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Nitesh Harjilawala</h3>
+          <p>Backend-Focused Full-Stack Developer building scalable SaaS systems and API-driven applications.</p>
+        </div>
+        <div class="footer-actions">
+          <button class="footer-btn" id="sharePortfolioBtn">Share Portfolio</button>
+          <button class="footer-btn" id="copyPortfolioBtn">Copy Link</button>
+          <a href="https://www.linkedin.com/in/nitesh-harjilawala/" target="_blank" class="footer-btn footer-btn-link">LinkedIn</a>
+        </div>
+      </div>
+    </div><button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+  </footer>
+  <footer class="sticky-footer">
+    <div class="footer-bottom">
+      <p>By <b><a href="https://www.linkedin.com/in/nitesh-harjilawala/" target="_blank">Nitesh Harjilawala</a></b> • Let’s connect! 🤝 • The page is actively maintained and subject to updates.</p>
+    </div>
+  </footer>
+  <script src="../resources/js/app.js" defer></script>
+</body>
+</html>
